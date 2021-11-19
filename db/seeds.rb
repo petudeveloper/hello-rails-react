@@ -24,4 +24,4 @@ Greeting.create!([{
   body: "Hi, nice to meet you!"
 }])
 
-p "Creadas #{Greeting.count} películas"
+p "Greetings #{Greeting.count} created"
