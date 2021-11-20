@@ -18,8 +18,10 @@ Run the following commands on your terminal
 - `yarn install`
 - `rails webpack:install`
 - `npm install`
+
 Setup database with:
 - `rails db:migrate`
+
 Seed database with 5 greetings:
 - `rails db:seed`
 
