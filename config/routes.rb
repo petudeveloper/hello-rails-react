@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
-  root 'static#index'
   namespace :api do
     namespace :v1 do
       resources :messages, only: [:show]
     end
   end
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # Forward all get request to StaticController#index
+  # Requests must be non-ajax and HTML mime format
+  get '*page', to: 'static#index', constraints: ->(req) do
+    !req.xhr? && !req.format.mtl?
+  end
+
+  root 'static#index'
 end

@@ -4,9 +4,10 @@ import PropTypes from "prop-types"
 const Greeting = ({message}) => {
   console.log(message)
   return (
-    <React.Fragment>
+    <div>
+      <h2>This is your random greeting</h2>
       Message: {message}
-    </React.Fragment>
+    </div>
   );
 }
 
