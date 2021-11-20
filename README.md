@@ -16,7 +16,6 @@ To get a local copy up and running follow these simple example steps.
 Run the following commands on your terminal
 - `bundle install`
 - `yarn install`
-- `rails webpack:install`
 - `npm install`
 
 Setup database with:
