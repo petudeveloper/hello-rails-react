@@ -9,28 +9,49 @@ This is a web API that works with React and Redux. The database stores greetings
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 
-- Run on your terminal `git clone https://github.com/petudeveloper/hello-rails-react.git`
-- Run on your terminal `cd hello-rails-react`
+- Run on your terminal 
+```
+git clone https://github.com/petudeveloper/hello-rails-react.git
+cd hello-rails-react
+```
 
 ## Setup
-Run the following commands on your terminal
-- `bundle install`
-- `yarn install`
-- `npm install`
 
-Setup database with:
-- `rails db:migrate`
+- Run the following commands on your terminal
+```
+bundle install
+yarn install
+npm install
+```
 
-Seed database with 5 greetings:
-- `rails db:seed`
+
+- Setup database with:
+```
+rails db:migrate
+```
+
+
+- Seed database with 5 greetings:
+```
+rails db:seed
+```
+
 
 ## Usage
 Start server with:
-- `rails server` or `rails s`
+```
+rails server
+```
 
-- Got to your browser and visit: `http://localhost:3000/`
+- Go to your browser and visit: 
+```
+http://localhost:3000
+```
 
-- To see the API working visit: `http://localhost:3000/api/v1/greetings`
+- To see the API working visit: 
+```
+http://localhost:3000/api/v1/greetings
+```
 
 ## Build With
 
