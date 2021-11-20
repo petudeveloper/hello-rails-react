@@ -9,6 +9,10 @@ const Greeting = () => {
   const message = useSelector((state) => state);
   const loadMessageAction = bindActionCreators(loadMessage, dispatch);
 
+  const handleClick = () => {
+    loadMessageAction()
+  }
+
   useEffect(() => {
     if (message.body === undefined) loadMessageAction();
     return () => null;
@@ -17,7 +21,8 @@ const Greeting = () => {
   return (
     <div>
       <h2>This is your random greeting page</h2>
-      Message: {message.body}
+      <p>Message: {message.body}</p>
+      <button type="button" onClick={handleClick}>Refresh Greeting</button>
     </div>
   );
 }
